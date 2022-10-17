@@ -13,7 +13,7 @@ This repository contains a Linux library to interface with the popular [[https:/
 This work was created as part of a larger university project to create a mobile pollution sensor which can be found in this repository, however I have chosen to split the GPS library off into it's own Repository to make it easier to reuse by myself and others. Though the pollution sensor work was a group effort all work on the GPS driver (and thus this repo) is my own.
 
 * Quick-start
-1. Either download, clone or add the repository as a sub-module
+** 1. Either download, clone or add the repository as a sub-module
 #+begin_src shell
 git clone https://github.com/BenjaminFrazer/libNeo6M
 #+end_src
@@ -21,7 +21,7 @@ Or
 #+begin_src shell
 git submodule add https://github.com/BenjaminFrazer/libNeo6M
 #+end_src
-2. Download the dependencies
+** 2. Download the dependencies
    On Raspbery pi:
 #+begin_src shell
 sudo apt-get make
@@ -34,7 +34,7 @@ sudo pacman -S boost
 sudo pacman -S make
 sudo pacman -S cmake
 #+end_src
-3. Build and compile the project (assumes you are currently in the project root):
+** 3. Build and compile the project (assumes you are currently in the project root):
 #+begin_src shell
 cmake -B build . # create a build tree in the build dir
 cd build #change to the build directory
@@ -48,14 +48,14 @@ ctest
 * Usage
 This repository will compile as a static library (a =.a= file) which you can use in conjunction with it's public headers (under =/include= ) to incorporate it with your own project.
 ** CMake
-1. Add this repo as a sub-module
+*** 1. Add this repo as a sub-module
 #+begin_src shell
 git submodule add
 #+end_src
-2. add the sub-module directory from your top-level =CMakeLists.txt=
+*** 2. add the sub-module directory from your top-level =CMakeLists.txt=
 #+begin_src shell
 #+end_src
-3. Set =libNeo6m= as a link target for your desired targets
+*** 3. Set =libNeo6m= as a link target for your desired targets
 #+begin_src shell
 target_link_libraries(<your_target> <[PRIVATE|PUBLIC]> libNeo6m)
 #+end_src
