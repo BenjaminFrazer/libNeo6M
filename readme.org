@@ -10,7 +10,7 @@
 
 This repository contains a Linux library to interface with the popular [[https://www.u-blox.com/en/product/neo-6-series][Neo6m]] GPS module. The intended target is the Raspberry pi board running Rasbian Linux, but I see no reason why this would not compile and run on other hardware provided it is running a Linux OS and has a place to connect a UART device. This is *not* designed to run on bare metal since it fundamentally relies on Linux OS calls.
 
-This work was created as part of a larger university project to create a mobile pollution sensor which can be found in this repository, however I have chosen to split the GPS library off into it's own Repository to make it easier to reuse by myself and others. Though the pollution sensor work was a group effort all work on the GPS driver (and thus this repo) is my own.
+This work was created as part of a larger university project to create a mobile pollution sensor which can be found in [[https://github.com/Lilypads/PollutionSensor][this]] repository, however I have chosen to split the GPS library off into it's own Repository to make it easier to reuse by myself and others. Though the pollution sensor work was a group effort all work on the GPS driver (and thus this repo) is my own.
 
 * Quick-start
 ** 1. Either download, clone or add the repository as a sub-module
