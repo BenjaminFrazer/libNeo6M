@@ -40,7 +40,7 @@ cmake -B build . # create a build tree in the build dir
 cd build #change to the build directory
 make # compile the project
 #+end_src
-4. Run tests
+** 4. Run tests
 #+begin_src shell
 ctest
 #+end_src
