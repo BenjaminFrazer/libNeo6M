@@ -54,8 +54,9 @@ git submodule add
 #+end_src
 *** 2. add the sub-module directory from your top-level =CMakeLists.txt=
 #+begin_src shell
+include_directories(external/libNeo6M)
 #+end_src
-*** 3. Set =libNeo6m= as a link target for your desired targets
+*** 3. Set =libNeo6m= as a link target for your desired targets in your target's =CMakeLists.txt=
 #+begin_src shell
 target_link_libraries(<your_target> <[PRIVATE|PUBLIC]> libNeo6m)
 #+end_src
