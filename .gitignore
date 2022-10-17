@@ -1,0 +1,8 @@
+.ccls-cache
+/.cmake/
+/CMakeFiles/
+/compile_commands.json
+/cmake_install.cmake
+/CTestTestfile.cmake
+/build/
+*.a
