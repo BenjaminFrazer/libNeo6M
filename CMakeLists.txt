@@ -15,14 +15,11 @@ set(CMAKE_BUILD_TYPE Debug)
 enable_testing()
 
 include_directories(include)
-# fix for compiler error relating to pthread
+
 # SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMakeModules")
-
-#add_library(<name> <wheretofind>)
 add_subdirectory(src)
 add_subdirectory(examples)
 add_subdirectory(tests)
 
-# include_directories(${PROJECT_SOURCE_DIR}/include)
